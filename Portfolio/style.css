@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(245, 244, 244);
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header */
+header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.100);
+}
+
+.text-logo {
+    cursor: pointer;
+}
+
+.primary-navigation ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.navigation-list a:not(.cta-style) {
+    text-decoration: none;
+    color: black;
+}
+
+/* Buttons */
+.cta-style {
+    background-color: red;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+
+/* Images */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 4rem;   
+}
+
+.hero-image {
+    max-width: 25%;
+    margin-right: 4rem;
+    transition: transform 500ms ease-in-out, scale 250ms ease-in-out;
+    cursor: pointer;
+}
+
+.hero-text-section {
+    max-width: 50%;
+}
+
+.hero-text-section h1, .hero-text-section p, .hero-text-section a {
+    margin-bottom: 2rem;
+}
+
+.hero-image:hover {
+    transform: translateX(70%);
+}
+
+.hero-image:active {
+    scale: 105%;
+}

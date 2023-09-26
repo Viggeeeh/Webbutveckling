@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(247, 247, 247);
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    box-shadow: 5px 5px 10px rgb(201, 201, 201);
+}
+
+.primary-navigation ul {
+    display: flex;
+    gap: 2rem;
+}
+
+.primary-navigation li {
+    list-style: none;
+    cursor: pointer;
+    transition: all ease-in-out 1s;
+}
+
+.primary-navigation li:hover {
+    text-decoration: underline;
+}
+
+.primary-navigation li:active {
+    color: rgb(226, 53, 53);
+
+}
+
+.logo-text {
+    transition: color ease-in-out 250ms;
+    cursor: pointer;
+}
+
+.logo-text:hover{
+    color: red
+}
+
+.main-content {
+    display: flex; 
+    justify-content: center;
+    margin-top: 10rem;
+}
+
+.bird-picture {
+    max-width: 25%;
+    transition: ease-in-out 1s;
+    cursor: pointer;
+}
+
+.bird-picture:hover {
+    rotate: 360deg;
+    scale: 130%;
+    box-shadow: 0px 0px 20px rgb(18, 77, 155);
+}
+
+.bird-picture:active {
+    rotate: 720deg;
+}
+
+.video {
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+}
+
+/* Box Hover */
+.respons {
+    scale: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.containter {
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 500px;
+    
+    cursor: pointer;
+    border-radius: 16px;
+    border: 2px solid blue;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: larger;
+    
+    max-width: 250px;
+    height: 250px;
+
+    border-radius: 16px;
+    background-color: blue;
+
+    animation: boxAnimation 2s infinite;
+    /*transition: transform 500ms ease-in-out; */
+}
+
+@keyframes boxAnimation {
+    0% {
+        transform: translateX(0%);
+    }
+
+    25% {
+        transform: translateX(100%);
+    }
+
+    50% {
+        transform: translateX(100%) translateY(100%);
+    }
+
+    75% {
+        transform: translateX(0%) translateY(100%);
+    }
+}

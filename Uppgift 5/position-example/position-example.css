@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.parent {
+    background-color: rgb(52, 198, 198);
+    font-size: 24px;
+    font-family: sans-serif;
+    padding: 1rem;
+    margin: 12px;
+}
+
+.child {
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    padding: 4px;
+}
+
+.child1 {
+    background-color: rgb(197, 72, 197);
+}
+
+.child2 {
+    background-color: rgb(210, 80, 80);
+}
+
+.child3 {
+    background-color: rgb(187, 255, 0);
+}
