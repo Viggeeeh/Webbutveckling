@@ -1,4 +1,4 @@
-const createCard = (headerText, content) => {
+const createCard = (headerText, content, link) => {
     // Create tags for html
     const projects = document.querySelector(".projects-container")
     const div = document.createElement("div")
@@ -17,11 +17,11 @@ const createCard = (headerText, content) => {
 }
 
 // create cards
-createCard("Header here!", "Hellooooo")
-createCard("Hello!", "Hellooooo")
-createCard("Hello!", "Hellooooo")
-createCard("Hello!", "Hellooooo")
-createCard("Hello!", "Hellooooo")
-createCard("Hello!", "Hellooooo")
+createCard("Uppgift 1", "Hellooooo", "../Uppgift")
+createCard("Uppgift 2", "Hellooooo")
+createCard("Uppgift 3", "Hellooooo")
+createCard("Uppgift 4", "Hellooooo")
+createCard("Uppgift 5", "Hellooooo")
+createCard("Uppgift 6", "Hellooooo")
 
 

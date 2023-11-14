@@ -90,7 +90,7 @@ header {
 
 /* Header hovers */
 .dropdown-content div:hover {
-    color: red;
+    color: blue;
 }
 
 .dropdown:hover .dropdown-content {
