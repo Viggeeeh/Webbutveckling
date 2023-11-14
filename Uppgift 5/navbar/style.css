@@ -46,3 +46,11 @@ header {
 .content img {
     max-width: 500px;
 }
+
+.primary-navigation a:hover {
+    color: red;
+}
+
+.primary-navigation a:active {
+    color: pink;
+}

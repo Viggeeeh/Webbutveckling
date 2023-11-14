@@ -5,29 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Viggo Öfors</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="projects.css">
 </head>
 <body>
-    <script src="app.js"></script>
+    <script src="app.js" defer></script>
 
+    <!-- Hero Section -->
     <header>
         <h1 class="text-logo">Viggo Öfors</h1>
         <nav class="primary-navigation">
+
+            <img src="./images/hamburger-icon.svg" alt="menu" class="hamburger-icon">
+            <div class="responsive-menu">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Projects</a>
+                <a href="#">Contact</a>
+            </div>
+            
+
             <ul class="navigation-list">
                 <li><a href="">Home</a></li>
                 <li><a href="">About</a></li>
-                <li><a href="">Projects</a></li>     
-                <li><a class="cta-style" id="cta" href="">Contact</a></li>   
+                <div class="dropdown">
+                    <li class="projects-dropdown"><a href="">Projects</a></li>
+                    <div class="dropdown-content">
+                        <div class="project project1">Första Projekt</div>
+                        <div class="project project1">Projekt 2</div>
+                        <div class="project project1">3de projekt</div>
+                    </div>   
+                </div>
+                  
+                <li><a class="cta-style" href="">Contact</a></li>   
             </ul>
         </nav>
     </header>
 
     <div class="hero-section">
+        <h2 class="easter-egg">Easter Egg</h2>
         <img class="hero-image" src="./images/viggo.jpg" alt="a picture on viggo naked">
         <div class="hero-text-section">
             <h1>Hello, My name is Viggo.</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, dicta impedit? Quis quibusdam, molestias quasi aut quam officiis culpa ipsum minima rem, provident laborum quisquam quidem ipsam pariatur id nostrum?</p>
-            <a class="cta-style" id="contact" href="">Contact</a>
+            <a class="cta-style outline-btn" href="">Go to Projects</a>
         </div>
+    </div>
+
+    <!-- Projects -->
+    <div class="projects-container" id="projects">
+
     </div>
 
 </body>

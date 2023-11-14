@@ -8,6 +8,7 @@
 body {
     background-color: rgb(245, 244, 244);
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
 }
 
 /* Header */
@@ -16,11 +17,19 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 80px;
+    max-width: 100%;
     padding-left: 4rem;
     padding-right: 4rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.100);
+}
+
+.hamburger-icon {
+    position: absolute;
+    right: 4rem;
+    top: 25px;
+    display: none;
+    cursor: pointer;
 }
 
 .text-logo {
@@ -33,24 +42,111 @@ header {
     gap: 2rem;
 }
 
+.primary-navigation li {
+    height: 80px; 
+    display: flex;
+    align-items: center;
+}
+
 .navigation-list a:not(.cta-style) {
     text-decoration: none;
     color: black;
 }
 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.082);  
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    cursor: pointer;
+}
+
+.responsive-menu {    
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: rgb(171, 79, 79);
+    inset: 0;
+
+    transition: all ease-in-out 1s;
+}
+
+.responsive-menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+}
+
+
+/* Header hovers */
+.dropdown-content div:hover {
+    color: red;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+} 
+
+
+@media (max-width: 700px) {
+    .primary-navigation ul  {
+        display: none;
+    }
+    .hamburger-icon {
+        display: flex;
+    }
+}
+
+
 /* Buttons */
 .cta-style {
-    background-color: red;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+    background-color: rgb(68, 68, 255);
+    padding-left: 3rem;
+    padding-right: 3rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
     color: white;
     text-decoration: none;
+
+    transition: transform ease-in-out 250ms; 
+}
+
+.cta-style:hover {
+    transform: translateY(-10%);
+}
+
+.outline-btn {
+    background-color: rgba(255, 255, 255, 0);
+    color: Black;
+    font-weight: 600;
+    box-shadow: inset 0px 0px 0px 4px black;
+    transition: all 200ms ease-in-out;
+}
+
+.outline-btn:hover {
+    background-color: rgb(68, 68, 255);
+    box-shadow: inset 0px 0px 0px 4px rgb(46, 46, 212);
+    color: white;
 }
 
 
-/* Images */
+/* Hero Section */
+.easter-egg {
+    position: absolute;
+    left: 10%;
+    z-index: -2;
+}
+
 .hero-section {
     display: flex;
     align-items: center;
@@ -69,14 +165,22 @@ header {
     max-width: 50%;
 }
 
+.hero-text-section h1 {
+    font-weight: 800;
+}
+
 .hero-text-section h1, .hero-text-section p, .hero-text-section a {
     margin-bottom: 2rem;
 }
 
+
+/* Hero Section Hovers */
 .hero-image:hover {
     transform: translateX(70%);
 }
 
+
+/* Hero Section Actives */
 .hero-image:active {
     scale: 105%;
 }
