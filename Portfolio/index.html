@@ -15,12 +15,17 @@
         <h1 class="text-logo">Viggo Öfors</h1>
         <nav class="primary-navigation">
 
-            <img src="./images/hamburger-icon.svg" alt="menu" class="hamburger-icon">
-            <div class="responsive-menu">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Projects</a>
-                <a href="#">Contact</a>
+            <img src="./images/hamburger-icon.svg" alt="menu" class="hamburger-icon" id="hamburger-menu">
+            <div class="responsive-menu" id="responsive-menu">
+                <img src="./images/x-icon.svg" alt="cancel" class="cancel-icon" id="cancel-icon">
+                <section class="links">
+                    <!-- Länkarna leder ingen stans medvetet! -->
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Projects</a>
+                    <a href="#">Contact</a>
+                </section>
+                
             </div>
             
 
@@ -28,11 +33,14 @@
                 <li><a href="">Home</a></li>
                 <li><a href="">About</a></li>
                 <div class="dropdown">
-                    <li class="projects-dropdown"><a href="">Projects</a></li>
-                    <div class="dropdown-content">
-                        <div class="project project1">Första Projekt</div>
-                        <div class="project project1">Projekt 2</div>
-                        <div class="project project1">3de projekt</div>
+                    <li class="projects-dropdown"><p>Projects</p></li>
+                    <div class="dropdown-content" id="dropdown-content">
+                        <div class="project project1"><a href="../uppgift-1/index.html">Uppgift 1</a></div>
+                        <div class="project project2"><a href="../uppgift-2/index.html">Uppgift 2</a></div>
+                        <div class="project project3"><a href="../uppgift-3/index.html">Uppgift 3</a></div>
+                        <div class="project project4"><a href="../uppgift-4/index.html">Uppgift 4</a></div>
+                        <div class="project project5"><a href="../Uppgift 5/sticky2/index.html">Uppgift 5</a></div>
+                        <div class="project project6"><a href="../uppgift-6/index.html">Uppgift 6</a></div>
                     </div>   
                 </div>
                   
@@ -42,12 +50,11 @@
     </header>
 
     <div class="hero-section">
-        <h2 class="easter-egg">Easter Egg</h2>
         <img class="hero-image" src="./images/viggo.jpg" alt="a picture on viggo naked">
         <div class="hero-text-section">
             <h1>Hello, My name is Viggo.</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, dicta impedit? Quis quibusdam, molestias quasi aut quam officiis culpa ipsum minima rem, provident laborum quisquam quidem ipsam pariatur id nostrum?</p>
-            <a class="cta-style outline-btn" href="">Go to Projects</a>
+            <a class="cta-style outline-btn" href="#projects">Go to Projects</a>
         </div>
     </div>
 
@@ -56,5 +63,8 @@
 
     </div>
 
+    <footer>
+        <p>© 2023 Viggo Öfors</p>
+    </footer>
 </body>
 </html>

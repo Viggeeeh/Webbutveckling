@@ -3,6 +3,8 @@
 * {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
 }
 
 body {
@@ -15,7 +17,7 @@ body {
 header {
     background-color: white;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
     align-items: center;
     height: 80px;
     max-width: 100%;
@@ -53,17 +55,33 @@ header {
     color: black;
 }
 
+.primary-navigation p {
+    cursor: pointer;
+}
+
+
 .dropdown-content {
-    display: none;
+    background-color: rgba(255, 255, 255, 0.724);
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    justify-content: right;
     position: absolute;
-    flex-direction: column;
-    background-color: white;
+    top: 5rem; 
+    left: -100rem;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.082);  
     padding-left: 1rem;
     padding-right: 1rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    gap: 2rem;
     cursor: pointer;
+
+    transition: 150ms ease-in-out;
+}
+
+.dropdown-content div:last-child {
+    margin-right: 5rem;
 }
 
 .responsive-menu {    
@@ -71,20 +89,28 @@ header {
     left: 0;
     top: 0;
     display: none;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-    gap: 2rem;
-    background-color: rgb(171, 79, 79);
+    background-color: rgb(202, 202, 202);
     inset: 0;
-
+    gap: 2rem;
     transition: all ease-in-out 1s;
+}
+
+.cancel-icon {
+    width: 42px;
+    position: relative;
+    left: 82%;
+    margin-top: 1.2rem;
 }
 
 .responsive-menu a {
     text-decoration: none;
     color: black;
     font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
 }
 
 
@@ -94,19 +120,13 @@ header {
 }
 
 .dropdown:hover .dropdown-content {
-    display: flex;
+    left: 0;
 } 
 
-
-@media (max-width: 700px) {
-    .primary-navigation ul  {
-        display: none;
-    }
-    .hamburger-icon {
-        display: flex;
-    }
+.navigation-list a:hover:not(.cta-style),
+.navigation-list p:hover {
+    color: blue;
 }
-
 
 /* Buttons */
 .cta-style {
@@ -130,7 +150,7 @@ header {
     color: Black;
     font-weight: 600;
     box-shadow: inset 0px 0px 0px 4px black;
-    transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out; 
 }
 
 .outline-btn:hover {
@@ -141,12 +161,6 @@ header {
 
 
 /* Hero Section */
-.easter-egg {
-    position: absolute;
-    left: 10%;
-    z-index: -2;
-}
-
 .hero-section {
     display: flex;
     align-items: center;
@@ -173,14 +187,43 @@ header {
     margin-bottom: 2rem;
 }
 
-
-/* Hero Section Hovers */
-.hero-image:hover {
-    transform: translateX(70%);
+footer {
+    background-color: white;
+    margin-top: 5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
-/* Hero Section Actives */
-.hero-image:active {
-    scale: 105%;
+@media (max-width: 700px) {
+    header {
+        padding-left: 2rem;
+    }
+
+    .primary-navigation ul  {
+        display: none;
+    }
+
+    .hamburger-icon {
+        display: flex;
+        right: 2rem;
+    }
+
+    .hero-section {
+        flex-direction: column-reverse;
+        align-items: start;
+        margin: 2rem;
+    }
+
+    .hero-text-section {
+        max-width: 100%;
+    }
+
+    .hero-image {
+        margin-top: 4rem;
+        max-width: 70%;
+    }
 }
