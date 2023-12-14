@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+}
+
+.main-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    gap: 2rem;
+}
+
+.display-text {
+    font-size: 18px;
+}
+
+.color-switch-btn {
+    font-size: 16px;
+    padding: 1rem 3rem;
+    background-color: white;
+    font-weight: 600;
+    border: 3px solid black;
+
+    cursor: pointer;
+}
+
+.color-switch-btn:hover {
+    background-color: rgb(245, 245, 245);
+}
