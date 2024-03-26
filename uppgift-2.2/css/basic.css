@@ -46,8 +46,10 @@ header span {
     font-size: var(--paragraph-size);
     list-style: none;
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
 }
+
+
 
 .hero-section {
     display: flex;
@@ -109,3 +111,4 @@ aside:not(.bottom-nav) {
 .primary-navigation li:hover {
     border-bottom: 1.5px solid rgb(255, 255, 255);
 }
+

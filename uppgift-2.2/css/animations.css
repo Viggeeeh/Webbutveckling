@@ -1,0 +1,21 @@
+:root {
+    --primary-color: #12f1ab;
+    --secondary-color: #010806;
+    --third-color: #f0fdf9;
+}
+
+
+.primary-button:hover {
+    transform: translateY(-4px);
+}
+
+.secondary-button:hover {
+    transform: translateY(-4px);
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    box-shadow: 2px 0px 12px var(--primary-color);
+}
+
+.primary-navigation a:hover {
+    color: var(--primary-color);
+}

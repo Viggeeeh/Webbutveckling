@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hur fungerar det?</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/dom.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <div class="gradient">
+        <div class="circle clr1"></div>
+        <div class="circle clr2"></div>
+    </div>
+    <section class="navigation">
+        <div class="wrapper">
+            <header class="flex">
+                <div class="logo flex" id="logo"> 
+                    <img src="../images/logo.svg" alt="M2 logo" id="logo">
+                    <p id="logo-text">M2</p>
+                </div>
+        
+                <nav>
+                    <ul class="primary-navigation flex">
+                        <li><a href="../index.html">Hem</a></li>
+                        <li><a href="../bottom-pages/basics.html">Grunderna</a></li>
+                        <li><a href="../bottom-pages/history.html">Historia</a></li>
+                        <li><a href="#">Tillgänglighet</a></li>
+                        <li><a href="../bottom-pages/dom.html"><span class="selected">Hur funkar det?</span></a></li>
+                        <li><a href="#">Genvägar</a></li>
+                    </ul>
+                </nav>
+
+                <div class="hamburger-menu">
+                    <img class="hamburger-icon" id="hamburger-menu" src="../images/hamburger.svg" alt="Hamburger menu">
+                    <ul class="hamburger-navigation">
+                        <li><a href="../index.html"><span class="selected">Hem</span></a></li>
+                        <li><a href="../bottom-pages/basics.html">Grunderna</a></li>
+                        <li><a href="../bottom-pages/history.html">Historia</a></li>
+                        <li><a href="#">Tillgänglighet</a></li>
+                        <li><a href="../bottom-pages/dom.html">Hur funkar det?</a></li>
+                        <li><a href="#">Genvägar</a></li>
+                    </ul>
+                </div>
+            </header>
+        </div>
+    </section>
+
+    <section class="information">
+        <div class="wrapper">
+            <div class="top-section">
+                <img class="dom-image" src="../images/dom.webp" alt="">
+                <div class="header-information">
+                    <h2>HUR FUNGERAR DOM?</h2>
+                    <p>Här kan du läsa om DOM och hur det fungerar. Har du några fler frågor?</p>
+                    <button class="primary-button button" id="primary-button">Kontakt</button>
+                </div>
+            </div>
+            <div class="information-text" id="main-content">
+                <p id="first-paragraph">
+                    Document Object Model (DOM) är en representationsmodell som används inom webbutveckling för att beskriva strukturen och relationerna mellan olika delar av ett HTML- eller XML-dokument. Här är en mer utförlig förklaring av några viktiga aspekter av DOM:
+                </p>
+                <h3>Trädstruktur:</h3>
+                <p>
+                    DOM representerar ett dokument som en hierarkisk trädstruktur. I detta träd är varje del av dokumentet, som element, attribut och text, representerad som en nod. Det översta noden i trädet kallas för "rotenoden," och varje nod har en föräldernod (förutom roten), noll eller flera barnnoder samt möjligen syskon och föräldrar.
+                </p>
+                <h3>Nodtyper:</h3>
+                <p>
+                    Det finns olika typer av noder i DOM, och de kan delas in i några huvudkategorier:
+                </p>
+                <p>     
+                    Elementnoder: Representerar HTML- eller XML-element, som div, p, osv.
+                    Attributnoder: Representerar attribut av element, som id, class, osv.
+                    Textnoder: Innehåller textinnehållet av element, som den faktiska texten som visas på webbsidan.
+                    Åtkomst och manipulation:
+                    DOM tillhandahåller ett gränssnitt (DOM API) för att kunna interagera med dokumentet genom programmeringsspråk, främst JavaScript. Utvecklare kan använda API:et för att hämta och ändra innehållet och egenskaper hos olika noder i dokumentet. Detta möjliggör dynamisk manipulation av webbsidans innehåll och struktur.
+                </p>
+                <h3>Eventhantering:</h3>
+                <p>
+                    DOM möjliggör hantering av olika händelser (events) som kan inträffa på webbsidan, till exempel musklick, tangenttryckningar eller sidbelastning. Genom att använda eventhantering kan utvecklare skriva kod som reagerar på användarens interaktion med webbsidan.
+                </p>    
+                <h3>Dynamisk uppdatering av sidor:</h3>
+                <p>
+                    En av de mest kraftfulla aspekterna av DOM är dess förmåga att möjliggöra dynamisk uppdatering av webbsidor utan att behöva ladda om hela sidan. Detta gör det möjligt för webbapplikationer att uppdatera innehållet på ett smidigt och responsivt sätt baserat på användarinteraktion eller externa händelser. 
+                </p>
+                <p>
+                    I sammanfattning är DOM central för att skapa dynamiska och interaktiva webbsidor genom att tillhandahålla en strukturerad representation av dokumentets innehåll och möjliggöra programmatisk åtkomst och manipulation av detta innehåll.
+                </p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
