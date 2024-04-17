@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/form.css">
+    <script src="../script.js" defer></script>
+
+
+
+    <title>Kontakta oss</title>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <section class="navigation">
+        <div class="wrapper">
+            <header class="flex">
+                <div class="logo flex" id="logo"> 
+                    <img src="../images/logo.svg" alt="M2 logo" id="logo">
+                    <p id="logo-text">M2</p>
+                </div>
+        
+                <nav>
+                    <ul class="primary-navigation flex">
+                        <li><a href="../index.html">Hem</a></li>
+                        <li><a href="../bottom-pages/basics.html">Grunderna</a></li>
+                        <li><a href="../bottom-pages/history.html">Historia</a></li>
+                        <li><a href="#">Tillgänglighet</a></li>
+                        <li><a href="../bottom-pages/dom.html">Hur funkar det?</a></li>
+                        <li><a href="#">Genvägar</a></li>
+                    </ul>
+                </nav>
+
+                <div class="hamburger-menu">
+                    <ul class="hamburger-navigation" id="hamburger-navigation">
+                        <img id="exit-button" src="../images/x.svg" alt="">
+                        <li><a href="../index.html">Hem</a></li>
+                        <li><a href="../bottom-pages/basics.html">Grunderna</a></li>
+                        <li><a href="../bottom-pages/history.html">Historia</a></li>
+                        <li><a href="#">Tillgänglighet</a></li>
+                        <li><a href="../bottom-pages/dom.html">Hur funkar det?</a></li>
+                        <li><a href="#">Genvägar</a></li>
+                    </ul>
+                    <img class="hamburger-icon" id="hamburger-menu" src="../images/hamburger.svg" alt="Hamburger menu">
+                </div>
+            </header>           
+        </div>
+    </section>
+
+    <section class="forms">
+        <form action="https://formsubmit.co/viggo.ofors@elev.ga.ntig.se" method="POST" class="form">
+            <div class="name-input">
+                <label for="text"><p>Name:</p></label>
+                <input type="text" name="name" class="input-box" placeholder="Your Name" required>
+            </div>
+            <div class="email-input">
+                <label for="email"><p>Email:</p></label>
+                <input type="email" name="email" class="input-box" placeholder="Your E-mail" required>
+            </div>
+            <div class="message-input">
+                <label for="message"><p>Message:</p></label>
+                <textarea type="text" name="message" id="message" cols="30" rows="10" form="form" placeholder="Enter your message" required></textarea>
+            </div>
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/bottom-pages/contact.html">
+            <div class="button-section">
+                <button type="submit" class="submit-button">Send</button>
+                <button type="reset" class="reset-button">Reset</button>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
