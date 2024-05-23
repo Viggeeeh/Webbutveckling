@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Miniräknare V2</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+
+    <div class="error-message" id="error-message">
+        <h3>Sorry!</h3>
+        <p>This button does not work currently, because Viggo is lazy..</p>
+        <p>Press here to give him an A!</p>
+        <button id="error-button">Do it</button>
+    </div>
+    <div class="container">
+        <div class="calculator" id="calculator">
+            <div class="display">
+                <h3 class="display-text" id="display-text"></h3>
+            </div>
+            <div class="button-container" id="button-container">
+                <button class="small-button button" id="num-button" data-key="7">7</button>
+                <button class="small-button button" id="num-button" data-key="8">8</button>
+                <button class="small-button button" id="num-button" data-key="9">9</button>
+                <button class="small-button button" id="special-button" data-key="delete">DEL</button>
+                <button class="small-button button" id="num-button" data-key="4">4</button>
+                <button class="small-button button" id="num-button" data-key="5">5</button>
+                <button class="small-button button" id="num-button" data-key="6">6</button>
+                <button class="small-button button" id="num-button" data-key="+">+</button>
+                <button class="small-button button" id="num-button" data-key="3">3</button>
+                <button class="small-button button" id="num-button" data-key="2">2</button>
+                <button class="small-button button" id="num-button" data-key="1">1</button>
+                <button class="small-button button" id="num-button" data-key="-">-</button>
+                <button class="small-button button" id="num-button" data-key=".">.</button>
+                <button class="small-button button" id="num-button" data-key="0">0</button>
+                <button class="small-button button" id="num-button" data-key="/">/</button>
+                <button class="small-button button" id="num-button" data-key="*">x</button>
+                <button class="small-button button" id="special-button" data-key="reset">RESET</button>
+                <button class="small-button button troll" id="special-button" data-key="troll">TROLL</button>
+                <button class="small-button button crazy" id="special-button" data-key="crazy">CRAZY</button>
+                <button class="small-button button" id="special-button" data-key="equal">=</button>
+            </div>   
+        </div>
+    </div>
+</body>
+</html>
