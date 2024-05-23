@@ -29,6 +29,7 @@ const isClicked = (id, link, imgLink) => {
     const card = document.getElementById(id)
     const img = document.getElementById(`${id}-img`)
 
+    // The picture on the card gets pressed
     img.addEventListener("click", (e) => {
         e.stopPropagation()  // Only the child gets pressed.
         console.log("You have opened an image")
@@ -36,6 +37,7 @@ const isClicked = (id, link, imgLink) => {
         document.body.style.overflow = "hidden"
     })
 
+    // If the picture is pressed to close
     document.getElementById(`${id}-showcase`).addEventListener("click", () => {
         document.getElementById(`${id}-showcase`).style.display = "none"
         document.body.style.overflow = "visible"
@@ -47,6 +49,7 @@ const isClicked = (id, link, imgLink) => {
 
 }
 
+// Creates all the images that will be displayed when pressed on
 const createNewImage = (idName, imgLink) => {
     const img = document.createElement("img")
     const showcase = document.getElementById("showcase-image")
