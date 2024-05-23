@@ -49,9 +49,20 @@
 .projects-image {
     width: 100%;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.146);
+    cursor: zoom-in;
 }
 
-@media (max-width: 980px) {
+.showcase-img {
+    position: fixed;
+    top: 50%;
+    left: 50%;  
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: auto;
+    cursor: zoom-out;
+}
+
+@media (max-width: 1100px) {
     .projects-container {
         grid-template-columns: auto auto;
     }

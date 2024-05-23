@@ -77,6 +77,9 @@ header {
     gap: 2rem;
     cursor: pointer;
 
+    opacity: 0
+    ;
+
     transition: 150ms ease-in-out;
 }
 
@@ -120,6 +123,7 @@ header {
 }
 
 .dropdown:hover .dropdown-content {
+    opacity: 100%;
     left: 0;
 } 
 
