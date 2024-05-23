@@ -182,3 +182,22 @@ body {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
  }
+
+ /* RESPONSIVE */
+ @media (width < 470px) {
+    .calculator {
+        scale: 70%;
+    }
+ }
+
+ @media (width < 300px) {
+    .calculator {
+        scale: 50%;
+    }
+ }
+
+ @media (width < 225px) {
+    .calculator {
+        scale: 30%;
+    }
+ }
